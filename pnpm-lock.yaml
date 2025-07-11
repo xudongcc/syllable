@@ -26,9 +26,15 @@ importers:
       '@syllables/en':
         specifier: workspace:*
         version: link:../en
+      '@syllables/es':
+        specifier: workspace:*
+        version: link:../es
       '@syllables/fallback':
         specifier: workspace:*
         version: link:../fallback
+      '@syllables/fr':
+        specifier: workspace:*
+        version: link:../fr
       '@syllables/zh':
         specifier: workspace:*
         version: link:../zh
@@ -54,6 +60,28 @@ importers:
       syllable:
         specifier: ^5.0.1
         version: 5.0.1
+    devDependencies:
+      '@syllables/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@syllables/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      '@types/node':
+        specifier: ^24.0.12
+        version: 24.0.13
+      tsup:
+        specifier: ^8.5.0
+        version: 8.5.0(postcss@8.4.31)(typescript@5.8.3)
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
+
+  packages/es:
+    dependencies:
+      syllable-es:
+        specifier: ^1.0.0
+        version: 1.0.1
     devDependencies:
       '@syllables/eslint-config':
         specifier: workspace:*
@@ -112,6 +140,28 @@ importers:
       '@syllables/phonemize':
         specifier: workspace:*
         version: link:../phonemize
+    devDependencies:
+      '@syllables/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@syllables/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      '@types/node':
+        specifier: ^24.0.12
+        version: 24.0.13
+      tsup:
+        specifier: ^8.5.0
+        version: 8.5.0(postcss@8.4.31)(typescript@5.8.3)
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
+
+  packages/fr:
+    dependencies:
+      syllabify-fr:
+        specifier: ^1.0.0
+        version: 1.0.0
     devDependencies:
       '@syllables/eslint-config':
         specifier: workspace:*
@@ -1866,6 +1916,13 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
+  syllabify-fr@1.0.0:
+    resolution: {integrity: sha512-2VwjjWuuEkPRhR0mVwW9fCbfM82swJyy20uTQ9PyC7cc4mxjuKrKqaau8wHgF2DNNJzeRzU35ZPFS4UmvYZslw==}
+
+  syllable-es@1.0.1:
+    resolution: {integrity: sha512-Y63kOb4JOSFd5ftBg8bUdv90P7MfM+QlugKbRT6vZOM/IIVavouqNCKYwVLCQBprY4V1Nt/QeXS1m8DQQFOW2g==}
+    hasBin: true
+
   syllable@5.0.1:
     resolution: {integrity: sha512-HWtNCp6v7J8H0lrT8j1HHjfOLltRoDcC7QRFVu25p4BE52JqetXG65nqC7CsatT8WQRfY4Qvh93BWJIUxbmXFg==}
     hasBin: true
@@ -1902,6 +1959,10 @@ packages:
   tree-kill@1.2.2:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
     hasBin: true
+
+  trim@0.0.1:
+    resolution: {integrity: sha512-YzQV+TZg4AxpKxaTHK3c3D+kRDCGVEE7LemdlQZoQXn0iennk10RsIoY6ikzAqJTc9Xjl9C1/waHom/J86ziAQ==}
+    deprecated: Use String.prototype.trim() instead
 
   ts-api-utils@2.1.0:
     resolution: {integrity: sha512-CUgTZL1irw8u29bzrOD/nH85jqyc74D6SshFgujOIA7osm2Rz7dYH77agkx7H4FBNxDq7Cjf+IjaX/8zwFW+ZQ==}
@@ -3944,6 +4005,13 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
+  syllabify-fr@1.0.0: {}
+
+  syllable-es@1.0.1:
+    dependencies:
+      normalize-strings: 1.1.1
+      trim: 0.0.1
+
   syllable@5.0.1:
     dependencies:
       '@types/pluralize': 0.0.29
@@ -3980,6 +4048,8 @@ snapshots:
       punycode: 2.3.1
 
   tree-kill@1.2.2: {}
+
+  trim@0.0.1: {}
 
   ts-api-utils@2.1.0(typescript@5.8.3):
     dependencies:

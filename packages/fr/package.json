@@ -1,5 +1,5 @@
 {
-  "name": "@syllables/core",
+  "name": "@syllables/fr",
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -14,11 +14,7 @@
     "build": "tsup"
   },
   "dependencies": {
-    "@syllables/en": "workspace:*",
-    "@syllables/es": "workspace:*",
-    "@syllables/fallback": "workspace:*",
-    "@syllables/fr": "workspace:*",
-    "@syllables/zh": "workspace:*"
+    "syllabify-fr": "^1.0.0"
   },
   "devDependencies": {
     "@syllables/eslint-config": "workspace:*",
