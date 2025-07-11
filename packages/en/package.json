@@ -1,0 +1,26 @@
+{
+  "name": "@syllable/en",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
+    "syllable": "^5.0.1"
+  },
+  "devDependencies": {
+    "@syllable/eslint-config": "workspace:*",
+    "@syllable/typescript-config": "workspace:*",
+    "@types/node": "^24.0.12",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
