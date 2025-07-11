@@ -10,7 +10,7 @@ const vowels = [
 // Match vowels or syllabic markers (\u0329 is the syllabic marker)
 const syllableRegex = new RegExp(`[${vowels}]|[^${vowels}]\\u0329`, "g");
 
-export const syllabize = (text: string): number => {
+export const estimateSyllableCount = (text: string): number => {
   if (!text || text.trim().length === 0) {
     return 0;
   }

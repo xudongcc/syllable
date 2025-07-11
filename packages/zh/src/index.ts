@@ -1,5 +1,5 @@
 import { pinyin } from "pinyin";
 
-export const syllabize = (text: string): number => {
+export const estimateSyllableCount = (text: string): number => {
   return pinyin(text).length;
 };

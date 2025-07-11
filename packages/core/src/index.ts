@@ -1,14 +1,17 @@
-import { syllabize as syllabizeEn } from "@syllables/en";
-import { syllabize as syllabizeZh } from "@syllables/zh";
-import { syllabize as syllabizeFallback } from "@syllables/fallback";
+import { estimateSyllableCount as estimateSyllableCountEn } from "@syllables/en";
+import { estimateSyllableCount as estimateSyllableCountZh } from "@syllables/zh";
+import { estimateSyllableCount as estimateSyllableCountFallback } from "@syllables/fallback";
 
-export const syllabize = (text: string, language: string): number => {
+export const estimateSyllableCount = (
+  text: string,
+  language: string
+): number => {
   switch (language) {
     case "en":
-      return syllabizeEn(text);
+      return estimateSyllableCountEn(text);
     case "zh":
-      return syllabizeZh(text);
+      return estimateSyllableCountZh(text);
     default:
-      return syllabizeFallback(text);
+      return estimateSyllableCountFallback(text);
   }
 };

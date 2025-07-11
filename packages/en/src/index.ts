@@ -1,5 +1,5 @@
-import { syllable as baseSyllable } from "syllable";
+import { syllable } from "syllable";
 
-export const syllabize = (text: string): number => {
-  return baseSyllable(text);
+export const estimateSyllableCount = (text: string): number => {
+  return syllable(text);
 };
