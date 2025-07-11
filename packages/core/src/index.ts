@@ -6,7 +6,7 @@ import { estimateSyllableCount as estimateSyllableCountFallback } from "@syllabl
 
 export const estimateSyllableCount = (
   text: string,
-  language: string
+  language: string,
 ): number => {
   switch (language) {
     case "en":
