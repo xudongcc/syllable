@@ -1,4 +1,4 @@
-import { phonemize } from "@syllable/phonemize";
+import { phonemize } from "@syllables/phonemize";
 
 const vowels = [
   // Standard IPA vowels (pure vowels)

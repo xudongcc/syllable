@@ -1,5 +1,5 @@
 {
-  "extends": "@syllable/typescript-config/base.json",
+  "extends": "@syllables/typescript-config/base.json",
   "compilerOptions": {
     "outDir": "dist"
   },

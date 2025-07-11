@@ -1,5 +1,5 @@
 {
-  "name": "@syllable/workspace",
+  "name": "@syllables/workspace",
   "private": true,
   "engines": {
     "node": ">=20"

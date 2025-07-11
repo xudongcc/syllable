@@ -1,5 +1,5 @@
 {
-  "name": "@syllable/eslint-config",
+  "name": "@syllables/eslint-config",
   "version": "0.0.0",
   "type": "module",
   "private": true,

@@ -1,5 +1,5 @@
 {
-  "name": "@syllable/fallback",
+  "name": "@syllables/fallback",
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -14,11 +14,11 @@
     "build": "tsup"
   },
   "dependencies": {
-    "@syllable/phonemize": "workspace:*"
+    "@syllables/phonemize": "workspace:*"
   },
   "devDependencies": {
-    "@syllable/eslint-config": "workspace:*",
-    "@syllable/typescript-config": "workspace:*",
+    "@syllables/eslint-config": "workspace:*",
+    "@syllables/typescript-config": "workspace:*",
     "@types/node": "^24.0.12",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"

@@ -1,6 +1,6 @@
-import { syllabize as syllabizeEn } from "@syllable/en";
-import { syllabize as syllabizeZh } from "@syllable/zh";
-import { syllabize as syllabizeFallback } from "@syllable/fallback";
+import { syllabize as syllabizeEn } from "@syllables/en";
+import { syllabize as syllabizeZh } from "@syllables/zh";
+import { syllabize as syllabizeFallback } from "@syllables/fallback";
 
 export const syllabize = (text: string, language: string): number => {
   switch (language) {

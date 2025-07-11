@@ -1,5 +1,5 @@
 {
-  "name": "@syllable/phonemize",
+  "name": "@syllables/phonemize",
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -11,8 +11,8 @@
     "build": "tsup"
   },
   "devDependencies": {
-    "@syllable/eslint-config": "workspace:*",
-    "@syllable/typescript-config": "workspace:*",
+    "@syllables/eslint-config": "workspace:*",
+    "@syllables/typescript-config": "workspace:*",
     "@types/node": "^24.0.12",
     "any-ascii": "^0.3.3",
     "phonemize": "^1.0.0",
